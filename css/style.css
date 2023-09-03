@@ -1,0 +1,51 @@
+body
+{
+    background-color: black;
+    color: white;
+}
+.meal img
+{
+    border-radius: 20px;
+}
+.layer
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 0.5s;
+    top: 100%;
+    height: 0;
+    opacity: 0;
+    border-radius: 20px;
+    color: black;
+}
+
+.meal:hover .layer
+{
+    top: 0;
+    height: 100%;
+    opacity: 1;
+}
+
+ul li
+{
+    transition: 1s;
+    transition-delay: 0.3s;
+    cursor: pointer;
+}
+
+.white i
+{
+    color: black;
+    cursor: pointer;
+}
+aside
+{
+    z-index: 5;
+    left: -300px;
+    transition: 1s;
+}
+
+.black
+{
+    width: 300px;
+    background-color: black;
+}

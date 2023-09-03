@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <main class="container">
+        <aside class="position-fixed top-0 h-100 d-flex">
+            <div class="h-100 p-3 d-flex flex-column justify-content-between black">
+                <ul class="list-unstyled">
+                    <li class="py-2 pt-5" onclick="displaySearchScreen()">Search</li>
+                    <li class="py-2 pt-5" onclick="displayCategories()">Categories</li>
+                    <li class="py-2 pt-5" onclick="displayArea()">Area</li>
+                    <li class="py-2 pt-5" onclick="displayIngredients()">Ingredients</li>
+                    <li class="py-2 pt-5" onclick="showContacts()">Contact Us</li>
+                </ul>
+                <div>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa fa-globe"></i>
+                    <br>
+                    <p>Copyright © 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+            <div class="bg-white py-3 h-100 d-flex flex-column justify-content-between white">
+                <img src="images/logo.png" alt="logo" width="50">
+                <span class="ps-2">
+                    <i class="fa-solid fa-align-justify fa-2x menu" onclick="openCloseMenu()"></i>
+                </span>
+                <div class="ps-2">
+                    <i class="fa fa-globe"></i>
+                    <br>
+                    <i class="fa fa-share-nodes"></i>
+                </div>
+            </div>
+        </aside>
+
+        <div></div>
+
+        <div class="row p-5 g-3" id="meals"></div>
+    </main>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
